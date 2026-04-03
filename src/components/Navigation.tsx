@@ -16,8 +16,7 @@ export const Navigation: React.FC = () => {
     { name: t.nav.kebeles, path: '/kebeles' },
     { name: t.nav.admin, path: '/admin' },
     { name: t.nav.tourism, path: '/tourism' },
-    { name: t.nav.news, path: '/news' },
-    { name: t.nav.contact, path: '/contact' },
+  
   ];
 
   return (

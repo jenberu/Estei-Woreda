@@ -14,9 +14,10 @@ const gallery = [
 ];
 
 const attractions = [
-  { name: "Gunna Mountain", type: "Natural Heritage", stars: 5 },
-  { name: "Debre Tsehay Monastery", type: "Religious/Historic", stars: 5 },
-  { name: "Andabet Falls", type: "Natural Beauty", stars: 4 },
+  { name: "Densa Mountain", type: "Natural Heritage", stars: 5 },
+  { name: "Hulete Petros Monastery", type: "Religious/Historic", stars: 5 },
+  { name: "Gedame Eyesus Monastery", type: "Religious/Historic", stars: 5 },
+  { name: "Wanqa Falls", type: "Natural Beauty", stars: 4 },
   { name: "Local Azmari Houses", type: "Cultural Experience", stars: 4 }
 ];
 
@@ -28,7 +29,7 @@ export const Tourism: React.FC = () => {
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-4">{t.tourism.title}</h1>
         <p className="text-gray-600 mb-12 text-lg max-w-2xl">
-          Estie is a treasure trove of undiscovered beauty, from the heights of Mount Gunna to the ancient spiritual sites.
+          Estie is a treasure trove of undiscovered beauty, from the heights of Mount Densa to the ancient spiritual sites.
         </p>
 
         <section className="mb-20">

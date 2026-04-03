@@ -23,8 +23,7 @@ function App() {
               <Route path="/kebeles" element={<Kebeles />} />
               <Route path="/admin" element={<PublicInfo />} />
               <Route path="/tourism" element={<Tourism />} />
-              <Route path="/news" element={<Community />} />
-              <Route path="/contact" element={<Community />} />
+             
             </Routes>
           </main>
           <Footer />

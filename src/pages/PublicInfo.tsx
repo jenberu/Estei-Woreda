@@ -38,7 +38,7 @@ export const PublicInfo: React.FC = () => {
               <Building2 className="text-primary" /> {t.admin.offices}
             </h2>
             <div className="space-y-4">
-              {['Woreda Administration Office', 'Justice Office', 'Education Bureau', 'Agriculture & Natural Resources'].map((office, idx) => (
+              {['Woreda Administration Office', 'Justice Office', 'Education Office', 'Agriculture & Natural Resources'].map((office, idx) => (
                 <div key={idx} className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-primary flex justify-between items-center">
                    <span className="font-medium">{office}</span>
                    <Briefcase className="h-5 w-5 text-gray-300" />

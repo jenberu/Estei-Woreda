@@ -2,6 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { Separator } from '@/components/ui/separator';
+import DesenaImage from '../assets/images/densa.png';
+import KomaFasileImage from "../assets/images/KomaFasil.png"
+import HuletePerosImage from "../assets/images/hulete.png"
+import Hero2Image from "../assets/images/hero2.png" 
+import clulturalImage from "../assets/images/culturalImage.png"
+const defualtImage = "https://storage.googleapis.com/dala-prod-public-storage/generated-images/a9ca11e1-32c4-4233-a42b-ee61197cba0d/estie-densa-mountain-and-rivers-ac034d3c-1775216922948.webp"
+
 
 export const About: React.FC = () => {
   const { t } = useLanguage();
@@ -10,27 +17,29 @@ export const About: React.FC = () => {
     {
       title: t.about.overviewTitle,
       text: t.about.overviewText,
-      img: "https://storage.googleapis.com/dala-prod-public-storage/generated-images/a9ca11e1-32c4-4233-a42b-ee61197cba0d/estie-densa-mountain-and-rivers-ac034d3c-1775216922948.webp"
+      img: DesenaImage || defualtImage
     },
     {
       title: t.about.bridgeTitle,
       text: t.about.bridgeText,
-      img: "https://storage.googleapis.com/dala-prod-public-storage/generated-images/a9ca11e1-32c4-4233-a42b-ee61197cba0d/sabero-dilde-bridge-b0cd9f81-1775216924175.webp"
+      img: KomaFasileImage
+    },
+    
+    {
+      title: t.about.huletepetrosTitle,
+      text: t.about.huletepetrosText,
+      img: HuletePerosImage
     },
     {
       title: t.about.history,
       text: t.about.historyText,
-      img: "https://storage.googleapis.com/dala-prod-public-storage/generated-images/a9ca11e1-32c4-4233-a42b-ee61197cba0d/historical-landmark-fe5a97fd-1775216262086.webp"
+      img: Hero2Image
     },
-    {
-      title: t.about.incidentTitle,
-      text: t.about.incidentText,
-      img: "https://storage.googleapis.com/dala-prod-public-storage/generated-images/a9ca11e1-32c4-4233-a42b-ee61197cba0d/estie-woreda-market-7c0a03d1-1775216923246.webp"
-    },
+   
     {
       title: t.about.culture,
       text: t.about.cultureText,
-      img: "https://storage.googleapis.com/dala-prod-public-storage/generated-images/a9ca11e1-32c4-4233-a42b-ee61197cba0d/estie-market-culture-6f2d3356-1775216259516.webp"
+      img: clulturalImage
     },
     {
       title: t.about.economy,
@@ -66,7 +75,7 @@ export const About: React.FC = () => {
               <div className="flex-1">
                 <h2 className="text-3xl font-bold mb-4 text-primary">{section.title}</h2>
                 <Separator className="w-20 mb-6 h-1 bg-primary" />
-                <p className="text-lg leading-relaxed text-gray-700">
+                <p className="text-lg leading-relaxed line-clamp-10 whitespace-break-spaces text-gray-700">
                   {section.text}
                 </p>
               </div>
