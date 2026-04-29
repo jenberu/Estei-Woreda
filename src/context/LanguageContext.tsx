@@ -10,7 +10,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('am');
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === 'en' ? 'am' : 'en'));
@@ -20,7 +20,7 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
 
   return (
     <LanguageContext.Provider value={{ language, t, toggleLanguage }}>
-      <div dir={language === 'am' ? 'rtl' : 'ltr'} className={language === 'am' ? 'font-serif' : ''}>
+      <div  className={language === 'am' ? 'font-serif' : ''}>
         {children}
       </div>
     </LanguageContext.Provider>
