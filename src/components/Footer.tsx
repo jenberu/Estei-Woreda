@@ -99,7 +99,9 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
-          <p>© 2026 By Jemberu Kassie. All rights reserved.</p>
+          <p>© 2026 By <a className="text-blue-300" href="https://myportifolo.onrender.com/" target="_blank" rel="noopener noreferrer">
+            Jemberu Kassie
+          </a>. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white">
               Privacy Policy

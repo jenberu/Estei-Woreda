@@ -84,7 +84,7 @@ export const Community: React.FC = () => {
                   <div className="bg-primary/10 p-3 rounded-full"><MapPin className="text-primary" /></div>
                   <div>
                     <p className="text-xs text-gray-500">Address</p>
-                    <p className="font-medium">Andabet Town, Estie Woreda, Ethiopia</p>
+                    <p className="font-medium">Mekane Eyesus Town, Estie Woreda, Ethiopia</p>
                   </div>
                 </div>
                 <div className="pt-6">

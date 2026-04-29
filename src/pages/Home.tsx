@@ -4,19 +4,26 @@ import { useLanguage } from "../context/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { ArrowRight, Mountain, ShieldCheck, Users } from "lucide-react";
+import {
+  ArrowRight,
+  Mountain,
+  ShieldCheck,
+  Users,
+  Heart,
+} from "lucide-react";
 import HeriImage from "../assets/images/hero-image.png";
 import MerkoriwosImage from "../assets/images/merkoriwos.png";
 import AsplatImage from "../assets/images/aspalt.png";
+import TimqetImage from "../assets/images/timiqet.png";
 
 export const newsData = [
   {
     id: 1,
-    title: "Sustainable Agriculture Initiative in Estie",
+    title: "በእስቴ መካነ ኢየሱስ የቅዱስ መርቆሬዎስ በዓል አከባበር",
     description:
-      "The woreda administration launched a new program to support highland honey producers and improve productivity.",
+      "የቅዱስ መርቆሬዎስ ዓመታዊ ክብረ በዓል በደብረ ታቦር እና በእስቴ መካነ ኢየሱስ ከተሞች በድምቀት ይከበራል። በዓሉ በታላቅ ሃይማኖታዊ ሥርዓት የሚፈጸም፣ ባሕላዊ ክዋኔዎችም የሚበዙበት ነው። .",
     category: "Updates",
-    date: "June 11, 2024",
+    date: "Feb 04, 2026",
     image: MerkoriwosImage,
   },
   {
@@ -25,17 +32,17 @@ export const newsData = [
     description:
       "በአሁኑ ሰዓት 76.6 ኪ.ሜ የሚሸፍነዉ የሀሙሲት - እስቴ የአስፓልት መንገድ  የግንባታ ስራዉን   Ningxia communication construction Co. Ltd. በተባለ የቻይና የመንገድ ስራ ተቋራጭ ድርጅት   እንዲሁም የማማከርና የቁጥጥር ስራዉን ደግሞ ኬቲም እና አላሚ አማካሪ መሀንዲሶች ከኮር አማካሪ መሀንዲሶች የግል ኃላፊነቱ የተወሰነ ኩባንያ ጋር በመተባበር  የመንገድ ስራዉ እተከናወነ ይገኛል.",
     category: "Construction",
-    date: "June 12, 2024",
+    date: "Feb 12, 2026",
     image: AsplatImage,
   },
   {
     id: 3,
-    title: "Community Health Awareness Campaign",
+    title: "ጥምቀት በእስቴ ወረዳ በመካነ-ኢየሱስ ከተማ በድምቀት ተከበረ",
     description:
-      "Local health offices conducted awareness programs focusing on sanitation, nutrition, and disease prevention.",
-    category: "Health",
-    date: "June 13, 2024",
-    image: MerkoriwosImage,
+      "በእስቴ መካነ ኢየሱስ የጥምቀት በዓል በደመቀ መልኩ ተከብሮ የዋለ ሲሆን ታቦታቱም ከማደሪያቸው ወደ መንበራቸው በሰላም ተመልሰዋል",
+    category: "Religous",
+    date: "Jan 19, 2026",
+    image: TimqetImage,
   },
   {
     id: 4,
@@ -84,6 +91,8 @@ export const Home: React.FC = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4 }}
+              className="  flex flex-col sm:flex-row justify-center pt-6 items-center gap-4"
+
           >
             <Link to="/about">
               <Button
@@ -93,12 +102,26 @@ export const Home: React.FC = () => {
                 {t.hero.explore} <ArrowRight className="ml-2" />
               </Button>
             </Link>
+            <a
+              href="https://myportifolo.onrender.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                variant="secondary"
+                className="rounded-full px-8 py-6 text-lg cursor-pointer"
+              >
+                Contact Developer
+                <ArrowRight className="ml-2" />
+              </Button>
+            </a>
           </motion.div>
         </div>
       </section>
 
       {/* Highlights */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="p-6 border-none shadow-sm hover:shadow-md transition-shadow">
@@ -116,7 +139,7 @@ export const Home: React.FC = () => {
                 <Users className="h-12 w-12 mx-auto text-primary mb-4" />
                 <h3 className="text-xl font-bold mb-2">Community</h3>
                 <p className="text-gray-600">
-                  Over 250,000 residents living in harmony across 30+ Kebeles.
+                  Over 250,000 residents living in harmony across 40+ Kebeles.
                 </p>
               </CardContent>
             </Card>
@@ -133,9 +156,39 @@ export const Home: React.FC = () => {
           </div>
         </div>
       </section>
+      {/* Peace Indicator Section */}
+      <section className="py-10 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-5xl mx-auto"
+          >
+            <div className="flex justify-center mb-6">
+              <Heart className="h-10 w-10 text-red-500 fill-red-500" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              {t.homeExtras.peaceTitle}
+            </h2>
+            <div className="relative rounded-2xl overflow-hidden mb-8 shadow-xl">
+              <img
+                src="https://storage.googleapis.com/dala-prod-public-storage/generated-images/a9ca11e1-32c4-4233-a42b-ee61197cba0d/peace-indicator-88a057f3-1777453104283.webp"
+                alt="Peace and Harmony in Estie"
+                className="w-full h-auto object-cover max-h-[500px]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center p-6">
+                <p className="text-white text-lg md:text-xl font-medium italic">
+                  "{t.homeExtras.peaceCaption}"
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* Featured News Preview */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-10 bg-gray-50">
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="flex justify-between items-center mb-12">

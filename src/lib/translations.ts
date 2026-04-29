@@ -31,6 +31,18 @@ export interface Translations {
     incidentText: string;
     huletepetrosText: string;
     huletepetrosTitle: string;
+    mekaneEyesusChurchText: string;
+    mekaneEyesusChurchTitle: string;
+  };
+  homeExtras: {
+    peaceTitle: string;
+    peaceCaption: string;
+    prominentTitle: string;
+    prominentSubtitle: string;
+    persons: {
+      name: string;
+      impact: string;
+    }[];
   };
   kebeles: {
     title: string;
@@ -99,6 +111,7 @@ export const translations: Record<Language, Translations> = {
         "The Heart of the Ethiopian Highlands - A Region of Rich Heritage, Agriculture, and Community.",
       explore: "Explore Estie",
     },
+
     about: {
       title: "About Estie Woreda",
       history: "Our History",
@@ -115,6 +128,102 @@ export const translations: Record<Language, Translations> = {
         "Estie is known for its agricultural products and huge market. Estie Densa, a mountain just outside Mekane Eyesus city, is the brand of the woreda, with Chena and Wanka, the two year-round rivers, flowing through its valleys. Despite being relatively underdeveloped compared to the national average, the region possesses immense potential for growth.",
       bridgeTitle:
         "History of Re-ese Adbarat we-Gedamat Qoma Saint Fasilides Church",
+      mekaneEyesusChurchTitle:
+        "Kal'it Eskindirya Debre Haymanot Mekane Eyesus Church",
+      mekaneEyesusChurchText: `The “Second Alexandria” of Ethiopia
+
+Debre Haymanot Mekane Eyesus, also known as Kal’it Eskenderiya (“Second Alexandria”), is one of Ethiopia’s most revered historic churches. Located in Mekane Eyesus Town, Estie Woreda, South Gondar Zone, Amhara Region, this sacred site is a spiritual, historical, and cultural landmark known for its deep religious heritage, ancient manuscripts, and enduring legacy of scholarship.
+
+Situated approximately 653 km from Addis Ababa, Debre Haymanot Mekane Eyesus stands near the majestic Estie Densa Mountain, a striking natural landmark shaped like a sleeping lion. Together, the church and its surrounding landscape create one of the most awe-inspiring spiritual destinations in Ethiopia.
+
+A Center of Faith, Learning, and Heritage
+
+Debre Haymanot Mekane Eyesus has long been recognized as a center of Ethiopian Orthodox Christian faith, scholarship, and sacred music. For generations, it has served as a place of learning where many bishops, scholars, and religious leaders received their education.
+
+The church is widely respected for:
+
+Being a historic center of religious education
+Producing many renowned scholars and bishops
+Preserving ancient liturgical traditions and sacred chants
+Housing valuable religious manuscripts and artifacts
+Serving as a symbol of faith, humility, and spiritual devotion
+
+Its sacred chants, rooted in the rich tradition of Saint Yared, remain one of its most treasured spiritual expressions and continue to inspire worshippers and visitors alike.
+
+Historical Significance
+
+Debre Haymanot Mekane Eyesus was originally founded during the reign of Emperor Adyam Seged Iyasu in 1668 E.C. Later, it was rebuilt and firmly established in 1772 E.C. by Dejazmach Hailu Eshete, who played a central role in shaping the church’s enduring legacy.
+
+The church is believed to have been built on a divinely revealed site, where the holy remains of a saint were discovered and buried with honor beneath the altar. This sacred foundation gave the church its deep spiritual significance and helped establish it as a major center of worship and theological learning.
+
+Because of its importance as a center of doctrine, sacred teaching, and spiritual leadership, Debre Haymanot came to be known as “Second Alexandria”—a title reflecting its role as a place of wisdom, faith, and theological excellence.
+
+Spiritual and Cultural Treasures
+
+Debre Haymanot Mekane Eyesus is home to a remarkable collection of sacred treasures that reflect its religious and historical importance.
+
+These include:
+
+More than 44 Tabots (holy replicas of the Ark of the Covenant)
+Ancient parchment manuscripts
+Rare religious books and texts
+Valuable church artifacts and heritage treasures
+Sacred sites associated with notable scholars and saints
+
+Among its most significant spiritual landmarks is the resting place of Memhir Esdros, a highly respected scholar and interpreter whose remains are preserved within the church grounds.
+
+These treasures make Debre Haymanot Mekane Eyesus not only a place of worship, but also a living archive of Ethiopia’s religious and cultural heritage.
+
+A Unique Visitor Experience
+
+Visiting Debre Haymanot Mekane Eyesus is both a spiritual and cultural experience.
+
+From the moment visitors approach the church, they are welcomed by ancient indigenous trees, peaceful surroundings, and a sacred atmosphere that inspires reflection and reverence. The harmony of nature, architecture, and worship creates a deeply moving experience for pilgrims, historians, and travelers alike.
+
+Within the church compound, visitors encounter:
+
+A peaceful and spiritually uplifting environment
+Traditional Ethiopian Orthodox architecture
+Sacred liturgical music and worship traditions
+Historic religious landmarks and surrounding monasteries
+Panoramic views of the surrounding highlands and mountains
+
+The site offers a rare opportunity to experience Ethiopia’s spiritual heritage in a setting of extraordinary natural beauty.
+
+Surrounding Sacred Landmarks
+
+Debre Haymanot Mekane Eyesus is surrounded by several historic churches, monasteries, and sacred sites that enrich its spiritual significance. These include:
+
+Zanchefena Giorgis
+Tinqcha Mariam
+Madoqa Gabriel
+Tejbara Mariam
+Nifaso Michael
+Woqachit Medhanealem
+Gafat Tekle Haymanot
+Mabi Abo
+Saint John the Baptist Monastery
+
+Together, these sacred landmarks form a rich religious landscape that has shaped the spiritual life of the region for centuries.
+
+Why Visit Debre Haymanot Mekane Eyesus?
+
+Debre Haymanot Mekane Eyesus is more than a historic church—it is a place where faith, history, scholarship, and culture meet.
+
+Whether you are a pilgrim, researcher, historian, or traveler, the church offers a meaningful journey into one of Ethiopia’s most treasured spiritual and cultural destinations.
+
+Visitors come to experience:
+
+Deep spiritual heritage
+Historic Ethiopian Orthodox tradition
+Ancient manuscripts and sacred artifacts
+Scenic natural surroundings
+A peaceful and unforgettable atmosphere
+Discover the Legacy of “Second Alexandria”
+
+Debre Haymanot Mekane Eyesus remains one of Ethiopia’s most significant centers of faith and learning. Its sacred history, spiritual atmosphere, and cultural treasures continue to inspire all who visit.
+
+Discover the timeless legacy of Debre Haymanot Mekane Eyesus—a place of faith, wisdom, and enduring heritage.`,
       bridgeText: `Re-ese Adbarat we-Gedamat Qoma Saint Fasilides is an ancient church located in the Estie District of the South Gondar Diocese.
 
 The church was founded in 1604/1605 GC (1597 EC) by Queen Wold Sahla, the wife of King Susenyos and the mother of Emperor Fasil (Fasilides).
@@ -129,7 +238,8 @@ Believing it was the will of God, the Queen first ordered the construction of a 
       incidentText:
         "On 15 October 2002, a gathering of 4,000 farmers in Dankura Maryam faced a historical event when police intervened during a political meeting. This event remains a part of the local community's memory regarding political development.",
 
-      huletepetrosTitle:"Saga Mekane Qidusian Walatta Petros Monastic Union of Mothers and Fathers",
+      huletepetrosTitle:
+        "Saga Mekane Qidusian Walatta Petros Monastic Union of Mothers and Fathers",
       huletepetrosText: `This monastery is an ancient and historical site established in the 16th century by Saint Walatta Petros.
 
 Location and Landscape
@@ -161,14 +271,39 @@ The Saga Mekane Qidusian Walatta Petros Unity Monastery is a place where many mi
 
 Today, the annual feast of Saint Walatta Petros is celebrated colorfully on Hidar 17 (November 26/27). The festivities begin on the eve and draw many scholars (Liqawunt) and faithful pilgrims from various regions.`,
     },
+    homeExtras: {
+      peaceTitle: "Harmony & Peace",
+      peaceCaption:
+        "Estie Woreda is a beacon of peaceful coexistence and community harmony in the highlands.",
+      prominentTitle: "Prominent Personalities",
+      prominentSubtitle:
+        "Distinguished individuals from Estie who have made significant national and international impacts.",
+      persons: [
+        {
+          name: "Lij Seifu Mikael",
+          impact:
+            "A visionary diplomat and noble who significantly influenced Ethiopia's early 20th-century international relations.",
+        },
+        {
+          name: "Dejazmach Mengesha Wube",
+          impact:
+            "An esteemed leader known for his governance and contributions to the region's socio-political stability.",
+        },
+        {
+          name: "Distinguished Scholars",
+          impact:
+            "Estie is home to numerous religious and academic scholars who have preserved Ethiopia's ancient wisdom.",
+        },
+      ],
+    },
     kebeles: {
       title: "Our Kebeles",
       subtitle: "Discover the diverse sub-districts of Estie Woreda.",
       population: "Population",
       landmarks: "Key Landmarks",
       personalities: "Prominent Personalities",
-      mapView: "Map View",
       listView: "List View",
+      mapView: "Map View",
       demographicsTitle: "Demographics & Statistics",
       totalPopulation: "Total Population",
       men: "Men",
@@ -180,7 +315,7 @@ Today, the annual feast of Saint Walatta Petros is celebrated colorfully on Hida
       religion: "Religion (Orthodox)",
       muslim: "Muslim",
       stats2005:
-        "Based on 2005 CSA estimates, Estie has a population of 403,956. The urban population stands at 3.96%, lower than the zone average of 8.3%.",
+        "Based on 2005 CSA estimates, Estie has a population of 210,825. The urban population stands at 3.96%, lower than the zone average of 8.3%.",
       stats1994:
         "The 1994 census reported 296,978 inhabitants. The region is almost entirely Amhara (99.98%) with a predominant Orthodox Christian community (96.53%).",
     },
@@ -247,11 +382,24 @@ Today, the annual feast of Saint Walatta Petros is celebrated colorfully on Hida
 ንግሥት ወልደሣህላ አፄ ሱስኒዮስ ሃይማኖታቸውን ሲቀይሩ ሃይማኖቴን አልቀይርም ገዳም መስርቸ የኢትዮጰያን  ሃይማኖት ማፅናት አለብኝ ብለዉ ብራደጌ (ብሩ አደጌ) ወደ ተባለ ቦታ በመምጣት ቤተ ክርስትያን ይሰራሉ፡፡ንግሥት ወልደሣህላ አፄ ሱስኒዮስ ሃይማኖታቸውን ሲቀይሩ ሃይማኖቴን አልቀይርም ገዳም መስርቸ የኢትዮጰያን  ሃይማኖት ማፅናት አለብኝ ብለዉ ብራደጌ (ብሩ አደጌ) ወደ ተባለ ቦታ በመምጣት ቤተ ክርስትያን ይሰራሉ፡፡
 
  ቤተ ክርስቲያኑ ተሰርቶ ካልቀ በኋላ ለክብረ በዓሉ ነጭ በሬ ታርዶ እያለ የታረደው በሬ ተነስቶ ይሮጣል ህዝቡም በሬዉን ለመያዝ ሲሮጥ ንግስቲቱ በሬዉን አትያዙት ዝምብላችሁ የሚቆምበትን ቦታ ተከተሉት ይሎቸዋል ህዝቡም በሬውን ይከተሉታል በመቀጠል ንግስቲቱ በሬው የት ደረሰ ብለው ይጠይቃሉ ህዝቡም ቆመ ይላል፡፡  በዚህ ምክንያት በሬው የቆመበት ቦታ ስያሜ ቆማ ይባላል፡፡  ንግስቲቱ በሬው የቆመበትን ቦታ ላይ ፈቃደ እግዚአብሔር ሆኖ ነው ብለዉ በመጀመሪያ እድሞ(አጥር) እና እቃ ቤት በኖራና በድንጋይ አሰሩ በመቀጠል ቤተክርስቲያን አሰርተዋል፡፡ቤተ ክርስቲያን ሲሰሩ እስከ ግማሽ ድረስ በኖራና በድንጋይ እንዳሰሩ አንድ ባህታዊ እድሜሽ አጭር ነው በጭቃ አስጨርሽው ብለዋት ከግማሽ በላይ በጭቃ ነው  ያሰሩት፡፡ ቤተ  ክርስቲያኑን በ1624ዓ.ም. አፄ ፋሲል የደብርና የገዳም ሥርዓት እንዲፈፀምበት ርዕሰ አድባራት ወገዳማት ቆማ ቅዱስ ፋሲለደስ ብለው ሰይመውታል፡፡ በደብርነቱ ዓመት እስከ ዓመት አገልግሎት እንዲሰጥ በገዳምነቱ ደግሞ በመቁንን እንዲኖር አድርገውታል፡፡በተጨማሪም በገዳሙ ዙርያ ያሉ 44 አድባራት የሚገኙ ምእመናን ለገዳሙ ግብር እንዲያስገቡ  በ318 አገልጋዮች እንዲገለገል ፤ በደናግል መነኮሳት እና አስራ ስምንት ዓመት ባልሞላቸው ዲያቆናት አገልገሎት እንዲሰጥ አድርገውታል፡፡ እንዲሁም በንግሥቲቱ የተሰጠ ሰፊ የእርሻ መሬት የነበረ ሲሆን የድመት መሬት (ለእቃ  ቤት ጠባቂዋ ድመት የእርሻ መሬት ተዘጋጅቶ ኑግ እየተዘራ ትመገብ ነበር) ፤ለጠራጊዎች ፤ለብረት ባለሙያዎች ፤ለሸማኔዎች መሬት ነበራቸው፡፡`,
+      mekaneEyesusChurchTitle: "ካል'ት እስክንድርያ ደብረ ሐይማኖት መካነ ኢየሱስ ቤተ ክርስቲያን",
+      mekaneEyesusChurchText: `ካልዕት እስክንድርያ ደብረ ሃይማኖት መካነ ኢየሱስ ይባላል። በደቡብ ጎንደር ዞን እስቴ ወረዳ መካነ ኢየሱስ ከተማ ይገኛል። የተመሠረተው በዐፄ አድያም ሰገድ ኢያሱ ዘመነ መንግሥት ነው።
+  አሁን በሕይወት ካሉት ጳጳሳት እስካለፉት ጳጳሳት በርካቶች ተምረውበታል። የትርጓሜው ሊቅ የመምህር ኤስድሮስ አፅም ያረፈውም በዚህ ቦታ ነው። ከአርባ አራት በላይ ታቦታት፣ በርካታ የብራና መጻሕፍት እና በርካታ ቅርሶች የሚገኙበት ለመሆኑ ዓለም ምሥክር ናት።
+  
+የሊቃውንት የጳጳሰት መፍለቂያ የሆነው ካልዕት እስክንድርያ ደብረሃይማኖት መካነኢየሱስ ቤተክርስቲያን አጥንትን የሚያረሰርሰውን ባማረ ቅላጼ የሚዜመው የሊቃውንቱን ዜማ በስደትም እየቀሰቀሰ አያስተኛም ። ደብረሃይማኖት ማን ነው?
+ደብረሐይማኖት መካነኢየሱስ ቤተክርስቲያንከአፍሪካ መዲና ከሆነችው
+አ.አ 653 ኪ.ሜ ርቀት በአማራ ክልል በደቡብ ጎንደር አስተዳደር ዞን በእስቴ ወረዳ የተኛ አንበሳ ቅርፅ ያለው የታላቁን ገዳም የመጥምቀ መለኮት ቅዱስ ዮሐንስ መገኛ ተራራን እርሱ በኩራት ሲመለከተዎ እርሰዎ ደግሞ በግርማ ሞገሱ ተመስጠው እስቴዴንሳን ከጀርባ አድርገው በአሰፈሪና በአስደሳች ግርማ የሚያገኙት ደብረሃይማኖት መካነኢየሱስ
+ደብረ ሃይማኖት መካነኢየሱስ ሲደርሱ ከቅጸሩ ውጭ ዙሪያውን ተቀራርበው የቆሙት ጥንታዊና ሀገር በቀል ዛፎች በነፋስ ኃይል ወዲያና ወዲህ እያሉ ሲወዛወዙ በያሬዳዊ ዜማ ተመስጦ መቋሚያውን ሊሰብር የደረሰ ካህን ይመስላሉ። ቀጥታ የእድሞውን ዋና በር አልፈው ወደግቢው ሲዘልቁ መሬቱን በእግረዎት ሊረግጡት ይጨንቀዎታል። የማያውቁት ስሜት ወደውስጥ ሰርስሮ ገብቶ ፍርሃትና ትሕትና ያላብሰዎታል። ባሉበት በመቆም የቤተክርስቲያኑን ግርማ ሞገስ እና አስፈሪነት እያደነቁ የተፈጠረበወትን አስገራሚ ድባብ ማዳመጥ ይጀምራሉ። ፀጥታ በሰፈነበት ዐውደ ምህረት የአዕዋፋት ዝማሬ ከቤተክርስቲያኑ ጉልላት ጋር ተዋሕዶ ሲሰሙ ኅብረ ድምፁ በስሜት ነጥቆ ወደሰማየ ሰማያት ይመራዎታል።
+ደብረሃይማኖት መካነኢየሱስ ቤተክርስቲያን በምስራቅ ዛንጨፈና ጊዮርጊስ በምዕራብ ጥንታዊቷና በ1565 ዓም የተመሰረተችው ጥንጫ ማርያም በሰሜን ማዶቃ ገብርኤልና ጠጅባራ ማርያም በሰሜን ምስራቅ ንፋሶ ሚካኤል በደቡብ ወቃጭት መድሃሃኔዓለም እና ጋፋት ተክለሃይማኖት በደቡብ ምዕራብ ማቢ አቦ በደቡብ ምስራ የተኛ አንበሳ የሚመስለው እሰቴዴንሳ ተራራና በውስጡ የሚገኘው መጥምቀ መለኮት ቅዱስ ዮሐንስ ገዳም ያዋስኑታል።
+ካልዕት እስክንድርያ ደብረሃይማኖት መካነኢየሱስ ትክሉ በዐፄ አድያም ሰገድ ኢያሱ ንጉሠ ነገሥት ዘኢትዮጵያ በ1668 ዓም ነው። አድያም ሰገድ ማለትም አውራጃዎች ሁሉ የሚሰግዱለት ማለት ነው ።
+ደብረሃይማኖት መካነኢየሱስ ቤተክርስቲያን ምንም እንኳን የተክሉ መሠረት በአፄ አድያም ሰገድ ኢያሱ ዘመነ መንግሥት ቢሆንም ዳሩ እሳት መሃሉ ገነት ተብሎ የተወገዘበትና ትክሉ ጸንቶ የተሰራው በኢትዮጵያ ለሶስት ዓመት ብቻ በነገሡት በዓፄ ሰሎሞን ዘመነመንግሥት ዓፄ ተክለጊዮርጊስ ሊነግሡ አንድ ሲቀራቸው ለዘመነ መሣፍንት ደግሞ አራት ዓመት ሲቀረው በ1772 ዓም በደጅአዝማች እሸቴ ኃይሉ ነው።
+ደጅ አዝማች ኃይሉ እሸቴ ይህ ታላቅ ደብር የት ቦታ ላይ መታነጽ እንዳለበት ያመለክታቸው ዘንድ ሲጠይቁ እንደአሁኑ ጊዜ ኮሚቴ እናቋቁም ሰበካ ጉባኤ እንምረጥ በማለት ሳይሆን ወገባቸውን በገመድ ታጥቀው ሱባኤ በመግባት ፈጣሪያቸውን በጾም በጸሎት ሲለምኑ ዛሬ ቤተክርስቲያኑ ከታነጸበት ቦታ ላይ ትልቅ የግራር ዛፍ ዙሪያውን በጫካ ተከቦ ታገኛለህ ግራሩን ቆርጠህ ዳሩንም መንጥረህ ከዛፉ ስር እንጨቱን ተደግፎ በራሱ ተተክሎ የበቃ ቅዱስ ሙቶ ታገኛለህ የምታገኘውን የቅዱሱን አጽም ሰብስበህ በሳጥን አድርገህ ቆፍረህ ቅበረው ቤተክርስቲያኑንም ከዚያ ላይ ስራው መንበሩንም ከቅዱሱ አጽም ላይ አስተክለህ ታቦቱን አስገባው ለኃይማኖት መዲና የብሉያትና የሐዲሳ መመስጠሪያ የያሬድ ጥዑመ ዜማ መፍለቂያ ይሆንልሃል እስከ እለተ ምጽዓት ድረስ እንደ ታላቋ እስክንድርያ ወልድ ዋህድ እየተባለ ሲነገርበት ይነኖራል መናፍቃን ቦታውን አይረግጡትም እንደእሳ ይፈጃቸዋል ቅድመ ዓለም ከአብ ያለእናት መወለዱ ድኅረዓለም ከእመቤታችን ያለአባት መወለዱ ሲመሰጠርበት ይኖራል፡፡ በሃይማኖቱም እንደማርቆስ ሀገር እንደታላቋ እስክንድርያ ይሆናል ተብሎ ስለተነገራቸው ካልዕት እስክንድርያ ያስባለው ለዚህ ነው።
+ደጅ አዝማች ኃይሉ እሸቴም የቅዱሱን አፅሙን ሰብስበው በክብር አስቀብረው በላዩ ላይ የታላቁን የደብረሐይማኖት የመካነ ኢየሱስን ቤተክርስቲያን በመትከል በዘመነ ማቴዎስ ቅዳሜ ታህሳስ 24 ቀን 1772 ዓ.ም ቅዳሴ ቤቱ እንዲከበር አድርገዋል ህንጻ ቤተክርስቲያኑን ለመጀመሪያ ጊዜ ያነጹት የአካባቢው ባለሙያዎች ሲሆኑ የአካባቢውን ህዝብ ያስተባብሩ እና ስራውን በበላይነት ይቆጣጠሩ የነበሩት እራሳቸው ደጅ አዝማች ኃይሉ እሸቴ ነበሩ፡፡ የቤተክርስቲያኑ ቅዳሴ ቤት ሲከበር ንጉሡ ህዝቅያስ ፣ እጨጌው አባ ተክለሃይማኖት፣ ጳጳሱ አቡነ ዮሳብ ይህ ነው ተብሎ በቁጥር ሊገለጽ የማይችል የደብሩ እንዲሁም ከደብሩ ውጭ የሆኑ ምዕመናን እና ሊቃውንት ተገኝተዋል፡፡`,
       incidentTitle: "ታሪካዊ ክስተት (1995)",
       incidentText:
         "ጥቅምት 5 ቀን 1995 ዓ.ም በዳንኩራ ማርያም የተሰበሰቡ 4,000 ገበሬዎች በፖለቲካዊ ስብሰባ ወቅት የፖሊስ ጣልቃ ገብነት የገጠማቸው ታሪካዊ ክስተት ነበር። ይህ ክስተት በአካባቢው ማህበረሰብ ትውስታ ውስጥ ይገኛል።",
-      
-      huletepetrosTitle: "ሳጋ መካነ ቅዱስያን ወልደ ፐትሮስ የእናቶችና የአባቶች ማኅበር",
+
+      huletepetrosTitle: "ሳጋ መካነ ቅዱስያን ወልደ ፐትሮስ የእናቶችና የአባቶች ገዳም",
       huletepetrosText: `የሳጋ መካነ ቅዱሳን ወለተ ጴጥሮስ የእናቶች እና የአባቶች አንድነት ገዳም ታሪክ ይህ ገዳም ጥንታዊና ታሪካዊ ሲሆን በ16ኛው  መቶ ክፍለ ዘመን በቅድስት ወለተ ጴጥሮስ አማካኝነት ተገደመ።ገዳሙ የሚገኘው በደቡብ ጎንደር ዞን ሀገረ ስብከት በእስቴ ወረዳ በገና መምቻ ቀበሌ ውስጥ ነው። ወደ ጥንታዊና ባለታሪኩ የቆማ ፋሲለደስ ቤተክረስቲያን ወደ ሚወስደው የመኪና መንገድ ገና መምቻ ከተባለችው የገጠር ከተማ በመውረድ ከ1:00 የእግር ጉዞ በኋላ ከቦታው ይደረሳል።
 ገዳሙ የሳጋ ወንዝን በመከተል ጥቅጥቅ ካለ ጫካ ውስጥ የሚገኝ ነው። የቦታው አቀማመጥ በሁለት ሰንሰላታማ ተራሮች መካከል ሲሆን አመቱን በሙሉ አረንጓዴ እንዲሁም ከቦታው ሲደረሱ መንፈስን የሚያድስ እጅግ ማራኪ ነው።
 ገዳሙን የገደመችው እናታችን ቅድስት ወለተ ጴጥሮስ ስትሆን በደቡብ ጎንደር ዞን ሀገረ ስብከት በስማዳ ወረዳ ልዩ ስሙ በለስ ሜካኤል በሚባል ቦታ ተወለደች። የአባቷ ስም ባህር ሰገድ የእናቷ ስም ክረስቶስ እበያ (ቴወብስታ) ይባላል። ሁለቱም እግዚአብሄርን የሚፈሩ ደጋግ ሰዎች ነበሩ ።    
@@ -262,6 +410,30 @@ Today, the annual feast of Saint Walatta Petros is celebrated colorfully on Hida
 ነገር ግን እናታችን ይህን መከራ ስታይ ካለችበት  በመውጣት ወደ ጉምዝ ሄዳ ከቆየች በኃላ በደቡብ ጎንደር ዞን እስቴ ወረዳ የ44ቱም ደብር አዋሳኝ በሆነው ሳጋ በረሀ በመግባት 8 ዓመት ፀለየች። መልክዓ ክርስቶስም ወደዚህ ስፍራ እንደሄደች ሲሰማ ሙሉ ሰራዊት ልኮ ዙሪያውን ሲያስጠብቅ ለአንዱ ወታደር ተገልፃለት  እዩአት እያለ ለሌሎች ሲያሳይ እየው በዚያ ሳጋ አለች በማለት ሲያሳይ ሲያዋት ወደ እግዚአብሔር ብታመለክት በቦታው ላይ የአመዳይ ውርጭ ወረደ። ሰራዊቱም ሁሉ አለቁ። የዚህ ቅዱስ ገዳም ስም ሳጋ አለች ከሚለው ተነስቶ ሳጋ እንደተባለ ገድሏ ይናገራል።
 የሳጋ መካነ ቅዱሳን ወለተ ጴጥሮስ አንድነት ገዳም በርካታ ገድላት እና ታምራት የተፈፀመበት በርካታ ንዋየ ቅድሳት የሚገኝበት እና ለልማት ምቹ የሆነ ገዳም ነው። በገዳሙ ዛሬም የእናታችን ቅድስት ወለተ ጴጥሮስ ዓመታዊ የእረፍት በዓል አስመልክቶ በየአመቱ ህዳር 17 ቀን ከዋዜማው ጀምሮ ከተለያዩ አድባራት በሚመጡ ሊቃውንትና ምዕመናን በድምቀት ይከብራል።
 `,
+    },
+    homeExtras: {
+      peaceTitle: "ሰላም እና ስምምነት",
+      peaceCaption:
+        "እስቴ ወረዳ በደጋማ አካባቢዎች የሰላማዊ አብሮ መኖር እና የማህበረሰብ ስምምነት ተምሳሌት ነው።",
+      prominentTitle: "ታዋቂ ግለሰቦች",
+      prominentSubtitle:
+        "በአገር አቀፍ እና በዓለም አቀፍ ደረጃ ከፍተኛ ተጽዕኖ ያሳደሩ ከእስቴ የወጡ ታዋቂ ሰዎች።",
+      persons: [
+        {
+          name: "ግርማው አበበ ታደሰ",
+          impact:
+            "በ20ኛው ክፍለ ዘመን መጀመሪያ ላይ የኢትዮጵያን ዓለም አቀፍ ግንኙነት በመቅረጽ ረገድ ትልቅ ሚና የተጫወቱ ባለራዕይ ዲፕሎማት።",
+        },
+        {
+          name: "ደጃዝማች መንገሻ ውቤ",
+          impact: "ለአካባቢው ማህበራዊ እና ፖለቲካዊ መረጋጋት ከፍተኛ አስተዋጽኦ ያበረከቱ የተከበሩ መሪ።",
+        },
+        {
+          name: "ታዋቂ ምሁራን",
+          impact:
+            "እስቴ የኢትዮጵያን ጥንታዊ ጥበብ የጠበቁ የበርካታ የሃይማኖት እና የአካዳሚክ ምሁራን መገኛ ናት።",
+        },
+      ],
     },
     kebeles: {
       title: "ቀበሌዎቻችን",
@@ -282,7 +454,7 @@ Today, the annual feast of Saint Walatta Petros is celebrated colorfully on Hida
       religion: "ሃይማኖት (ኦርቶዶክስ)",
       muslim: "ሙስሊም",
       stats2005:
-        "በ1997 ዓ.ም በማዕከላዊ ስታቲስቲክስ ኤጀንሲ ግምት መሰረት እስቴ 403,956 ህዝብ አላት። የከተማው ህዝብ 3.96% ሲሆን ይህም ከዞኑ አማካይ 8.3% ያነሰ ነው።",
+        "በ1997 ዓ.ም በማዕከላዊ ስታቲስቲክስ ኤጀንሲ ግምት መሰረት እስቴ 210,825 ህዝብ አላት። የከተማው ህዝብ 3.96% ሲሆን ይህም ከዞኑ አማካይ 8.3% ያነሰ ነው።",
       stats1994:
         "እ.ኤ.አ. በ1994 በተካሄደው ቆጠራ 296,978 ነዋሪዎች ተመዝግበዋል። ክልሉ ሙሉ በሙሉ በሚባል ደረጃ አማራ (99.98%) ሲሆን የኦርቶዶክስ ክርስትና እምነት ተከታዮች (96.53%) ይበዛሉ።",
     },
